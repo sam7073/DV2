@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DV2/static/css/main.58e4618f.chunk.css",
+    "main.js": "/DV2/static/js/main.32d128c2.chunk.js",
+    "main.js.map": "/DV2/static/js/main.32d128c2.chunk.js.map",
+    "runtime-main.js": "/DV2/static/js/runtime-main.c4afa59c.js",
+    "runtime-main.js.map": "/DV2/static/js/runtime-main.c4afa59c.js.map",
+    "static/js/2.9f095651.chunk.js": "/DV2/static/js/2.9f095651.chunk.js",
+    "static/js/2.9f095651.chunk.js.map": "/DV2/static/js/2.9f095651.chunk.js.map",
+    "index.html": "/DV2/index.html",
+    "static/css/main.58e4618f.chunk.css.map": "/DV2/static/css/main.58e4618f.chunk.css.map",
+    "static/js/2.9f095651.chunk.js.LICENSE.txt": "/DV2/static/js/2.9f095651.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/DV2/static/media/Maplestory.9d949758.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4afa59c.js",
+    "static/js/2.9f095651.chunk.js",
+    "static/css/main.58e4618f.chunk.css",
+    "static/js/main.32d128c2.chunk.js"
+  ]
+}
