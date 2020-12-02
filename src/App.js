@@ -1,13 +1,14 @@
-import './App.css';
-import Card from './components/Card';
-import Button from './components/Buttons';
+import "./App.css";
+import Card from "./components/Card";
+import Button from "./components/Buttons";
 
-import Dv1 from './Routes/Dv1';
-import Dv2 from './Routes/Dv2';
-import Result from './Routes/Result';
+import Data from "./Routes/Data";
+import Dv1 from "./Routes/Dv1";
+import Dv2 from "./Routes/Dv2";
+import Result from "./Routes/Result";
 
-import styled from 'styled-components';
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import styled from "styled-components";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +19,10 @@ function App() {
     <div className="App">
       <Container>
         <BrowserRouter basename="/DV2">
-          <Card width="200px" height="600px" fd="column">
+          <Card width="200px" height="700px" fd="column">
+            <Link to="/data">
+              <Button primary>데이터</Button>
+            </Link>
             <Link to="/dv1">
               <Button primary>시각화 1</Button>
             </Link>
@@ -29,8 +33,9 @@ function App() {
               <Button primary>결론</Button>
             </Link>
           </Card>
-          <Card width="600px" height="600px" margin_left="50px">
+          <Card width="800px" height="700px" margin_left="50px">
             <Switch>
+              <Route path="/data" exact component={Data} />
               <Route path="/dv1" exact component={Dv1} />
               <Route path="/dv2" component={Dv2} />
               <Route path="/result" component={Result} />

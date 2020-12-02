@@ -1,30 +1,15 @@
-import React from 'react';
-import Chart from 'react-google-charts';
+import React from "react";
 
 export function Dv1(props) {
   return (
-    <div>
-      <Chart
-        width={'500px'}
-        height={'300px'}
-        chartType="GeoChart"
-        data={[
-          ['City', 'Population', 'Area'],
-          ['Rome', 2761477, 1285.31],
-          ['Milan', 1324110, 181.76],
-          ['Naples', 959574, 117.27],
-        ]}
-        options={{
-          region: 'IT',
-          displayMode: 'markers',
-          colorAxis: { colors: ['green', 'blue'] },
-        }}
-        // Note: you will need to get a mapsApiKey for your project.
-        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-        mapsApiKey="AIzaSyBRwJtOFOOM8EM7K975aeVdSTQPkUwggPw"
-        rootProps={{ 'data-testid': '2' }}
-      />
-    </div>
+    <iframe
+      src="https://maps.co/embed/5fc750a3261c97585805212e7f0c"
+      width="800"
+      height="600"
+      frameborder="0"
+      allowfullscreen
+      title="DV1"
+    ></iframe>
   );
 }
 
