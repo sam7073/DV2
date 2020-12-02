@@ -2,7 +2,6 @@ import "./App.css";
 import Card from "./components/Card";
 import Button from "./components/Buttons";
 
-import Data from "./Routes/Data";
 import Dv1 from "./Routes/Dv1";
 import Dv2 from "./Routes/Dv2";
 import Result from "./Routes/Result";
@@ -12,6 +11,7 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
+  position: relative;
 `;
 
 function App() {
@@ -20,9 +20,6 @@ function App() {
       <Container>
         <BrowserRouter basename="/DV2">
           <Card width="200px" height="700px" fd="column">
-            <Link to="/data">
-              <Button primary>데이터</Button>
-            </Link>
             <Link to="/dv1">
               <Button primary>시각화 1</Button>
             </Link>
@@ -35,7 +32,6 @@ function App() {
           </Card>
           <Card width="800px" height="700px" margin_left="50px">
             <Switch>
-              <Route path="/data" exact component={Data} />
               <Route path="/dv1" exact component={Dv1} />
               <Route path="/dv2" component={Dv2} />
               <Route path="/result" component={Result} />

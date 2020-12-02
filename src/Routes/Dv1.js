@@ -1,16 +1,8 @@
 import React from "react";
+import image1 from "../Assets/Images/1.png";
 
 export function Dv1(props) {
-  return (
-    <iframe
-      src="https://maps.co/embed/5fc750a3261c97585805212e7f0c"
-      width="800"
-      height="600"
-      frameborder="0"
-      allowfullscreen
-      title="DV1"
-    ></iframe>
-  );
+  return <img src={image1} alt="" width="800px" height="600px" />;
 }
 
 export default Dv1;
